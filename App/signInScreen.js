@@ -38,7 +38,7 @@ class SignInScreen extends Component {
         });
     } else {
         const sendlogin = {
-            EMAIL: this.state.EMAIL,
+            EMAIL: str.toLowerCase(this.state.EMAIL),
             PASS: this.state.PASS
         };
         axios
